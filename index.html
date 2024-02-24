@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Food Product</title>
+  <style>
+    /* Global Styles */
+    
+   body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #fff; /* Changed font color to white */
+      font-size: 16px;
+      background-image:url(pinklocalfood.jpg);
+      background-size:cover;
+      max-width:100%;
+
+    }
+
+    header, footer {
+      background-color: #FF6EC7;
+      color: #fff;
+      padding: 20px;
+    }
+    .footer-paralax {
+  padding: 4rem 0 0 0;
+}
+
+.contact-mf {
+  margin-top: 4rem;
+}
+
+@media (min-width: 767px) {
+  .contact-mf .box-pl2 {
+    margin-top: 3rem;
+    padding-left: 0rem;
+  }
+}
+
+.php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.php-email-form input,
+.php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+  border-color: #0078ff;
+}
+
+.php-email-form input {
+  padding: 10px 15px;
+}
+
+.php-email-form textarea {
+  padding: 12px 15px;
+  margin-bottom: 0;
+}
+
+.php-email-form button[type=submit] {
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.php-email-form button[type=submit]:hover {
+  background: #3393ff;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+@media (min-width: 767px) {
+  .card-blog {
+    margin-bottom: 3rem;
+  }
+}
+
+.card-blog .card-body {
+  position: relative;
+}
+
+.card-blog .card-category-box {
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.card-blog .card-category {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #0078ff;
+  border-radius: 4px;
+}
+
+.card-blog .card-category .category {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+
+.card-blog .card-title {
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+}
+
+.card-blog .card-description {
+  color: #4e4e4e;
+}
+
+.card-blog .post-author {
+  display: inline-block;
+}
+
+.card-blog .post-date {
+  color: #4e4e4e;
+  display: inline-block;
+  float: right;
+}
+
+/*--------------------------------------------------------------
+# Blog Single
+--------------------------------------------------------------*/
+.post-box,
+.form-comments,
+.box-comments,
+.widget-sidebar {
+  padding: 2rem;
+  background-color: #fff;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+
+  .post-box,
+  .form-comments,
+  .box-comments,
+  .widget-sidebar {
+    padding: 3rem;
+  }
+}
+
+.blog-wrapper .article-title {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .blog-wrapper .article-title {
+    font-size: 1.9rem;
+  }
+}
+
+.blog-wrapper .post-meta {
+  margin: 1rem 0;
+}
+
+.blog-wrapper .post-meta ul {
+  border-left: 4px solid #0078ff;
+  margin-top: 1rem;
+}
+
+.blog-wrapper .post-meta ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.blog-wrapper .post-meta ul a {
+  color: #0078ff;
+}
+
+.blog-wrapper .post-meta ul span {
+  color: #1e1e1e;
+}
+
+.blog-wrapper .blockquote {
+  border-left: 4px solid #0078ff;
+  padding: 18px;
+  font-style: italic;
+}
+
+/*------/ Comments /------*/
+.box-comments .list-comments li {
+  padding-bottom: 40px;
+}
+
+.box-comments .list-comments .comment-avatar {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.box-comments .list-comments .comment-avatar img {
+  width: 80px;
+  height: 80px;
+}
+
+.box-comments .list-comments .comment-author {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .box-comments .list-comments .comment-author {
+    font-size: 1.5rem;
+  }
+}
+
+.box-comments .list-comments .comment-details {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 25px;
+}
+
+.box-comments .list-comments a {
+  color: #0078ff;
+}
+
+.box-comments .list-comments span {
+  color: #1e1e1e;
+  font-style: italic;
+}
+
+.box-comments .comment-children {
+  margin-left: 40px;
+}
+
+/*------/ Sidebar /------*/
+.widget-sidebar .sidebar-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-left: 5px solid #0078ff;
+  padding-left: 15px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.widget-sidebar .list-sidebar li {
+  position: relative;
+  padding: 6px 0 6px 24px;
+}
+
+.widget-sidebar .list-sidebar li:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  left: 0;
+  background-color: #0078ff;
+  top: 20px;
+}
+
+.sidebar-search input {
+  background-color: #fff;
+  border-radius: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar-search .btn-search {
+  background-color: #0078ff;
+  border-color: #0078ff;
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.widget-tags ul li {
+  display: inline-block;
+  background-color: #0078ff;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+}
+
+.widget-tags ul li a {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: #0062d3;
+}
+
+footer .copyright {
+  margin-bottom: 0.3rem;
+}
+
+footer .credits {
+  margin-bottom: 0;
+}
+
+footer .credits a {
+  color: #fff;
+}
+    main {
+      padding: 20px;
+      background-color: #f535aa; /* Neon pink background color */
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Navigation Styles */
+    li{
+        width:10px;
+    }
+    nav {
+      background-color: #FF00FF;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+
+    }
+
+    nav ul li a {
+      color: black;
+      text-decoration: none;
+      font-size:30px;
+      font-family:serif;
+
+     
+    }
+
+
+
+    /* Section Styles */
+    #product-info, #product-details {
+      margin-bottom: 30px;
+    }
+
+    #product-image {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .product-card {
+      background-color: #ffc0cb; /* Light pink background color */
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .product-description {
+      margin-top: 20px;
+    }
+
+    .product-description h3 {
+      font-size: 20px;
+      color: #fff; /* Changed font color to white */
+      margin-bottom: 10px;
+    }
+
+    .product-description p {
+      font-size: 16px;
+      color: #fff; /* Changed font color to white */
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 22px;
+      color:white;
+      margin-top: 10px;
+
+    }
+
+    /* Product Details Styles */
+    #product-details {
+      background-color: #FBA0E3;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    #product-details h2 {
+     
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    #product-details p {
+     
+      color:black;
+      line-height: 1.6;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (min-width: 768px) {
+      main {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      #product-info, #product-details, #product-image {
+        flex: 1;
+        margin-right: 20px;
+       
+
+      }
+      #product-info{
+        font-size:25px;
+      }
+      #product-details{
+        font-size:25px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+    
+  <header>
+    <center><h1 style="font-size: 50px; color:black;">Our Local Food Product</h1></center>
+    <nav>
+      <ul>
+        <li style="font-weight: 3px;"><a href="#product-info">Home</a></li>
+        <li style="font-size: 3px;"><a href="#product-image">Products</a></li>
+        <li style="font-size: 3px;"><a href="#product-details">About Us</a></li>
+        <li style="font-size: 3px;"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <center><main>
+    <section id="product-info">
+      <h2 style="text-align: left; color:black;">About Our Product</h2>
+      <p>Our local food product is a culinary treasure crafted with care and passion, reflecting the rich tapestry of flavors and traditions unique to our region. Rooted in a deep appreciation for local ingredients and culinary heritage, each product embodies the essence of our community's vibrant food culture.</p>
+      <p>At the heart of our offerings is a commitment to quality, sustainability, and authenticity. We source the freshest, locally-grown produce, partnering with small-scale farmers who share our dedication to ethical farming practices and environmental stewardship. From sun-ripened fruits to heirloom vegetables and fragrant herbs, every ingredient tells a story of craftsmanship and connection to the land.</p>
+      <p>Our product range is as diverse as the landscapes that inspire it, offering a kaleidoscope of flavors and textures to tantalize the taste buds. Whether you crave the sweet indulgence of artisanal preserves, the fiery kick of handcrafted condiments, or the comforting warmth of homemade baked goods, our selection has something to delight every palate.One of our signature offerings is our line of fruit preserves, meticulously crafted in small batches to preserve the natural essence of each fruit. From luscious strawberry jams bursting with summer sweetness to tangy citrus marmalades infused with the bright flavors of sun-kissed oranges and lemons, each jar is a testament to the art of preserving and the bounty of the seasons.</p>
+      <p>As we continue to grow and evolve, our mission remains the same: to celebrate the flavors of our region, honor the artisans who produce them, and inspire a deeper connection to the food we eat and the land that sustains us. Join us on this delicious journey as we explore the boundless possibilities of local food and the endless joys of sharing it with others.</p>
+    </section></center>
+    
+    <section id="product-image">
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Delicious and Nutritious.jpg" alt="Local Food Product 1">
+        <div class="product-description">
+          <h3>Delicious and Nutritious</h3>
+          <p>Our flagship product, packed with flavor and essential nutrients to fuel your day.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$9.99</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Farm-Fresh Produce.jpg" alt="Local Food Product 2">
+        <div class="product-description">
+          <h3>Farm-Fresh Produce</h3>
+          <p>Locally grown fruits and vegetables, harvested at peak ripeness for maximum flavor.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$7.99</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Organic Fruit Jam.jpg" alt="Local Food Product 3">
+        <div class="product-description">
+          <h3>Organic Fruit Jam</h3>
+          <p>Handcrafted from locally grown fruits, bursting with natural sweetness.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$5.99</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Farm-Fresh Eggs.jpg" alt="Local Food Product 4">
+        <div class="product-description">
+          <h3>Farm-Fresh Eggs</h3>
+          <p>Locally produced eggs from free-range chickens, rich in flavor and nutrients.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$4.99</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Cheese.jpg" alt="Local Food Product 5">
+        <div class="product-description">
+          <h3>Cheese</h3>
+          <p>Handcrafted cheese made from the finest milk sourced from local dairy farms.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$10.99</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Homemade Pasta.jpg" alt="Local Food Product 6">
+        <div class="product-description">
+          <h3>Homemade Pasta</h3>
+          <p>Traditional pasta made with locally milled flour, perfect for Italian cuisine lovers.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$12.99</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Artisan Bread.jpg" alt="Local Food Product 7">
+        <div class="product-description">
+          <h3>Artisan Bread</h3>
+          <p>Freshly baked bread using ancient techniques and locally sourced grains.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$6.49</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Handcrafted Chocolates.jpg" alt="Local Food Product 8">
+        <div class="product-description">
+          <h3>Handcrafted Chocolates</h3>
+          <p>Indulge in premium chocolates made from ethically sourced cacao beans.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$14.99</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Freshly Squeezed Juice.jpg" alt="Local Food Product 9">
+        <div class="product-description">
+          <h3>Freshly Squeezed Juice</h3>
+          <p>Enjoy the refreshing taste of locally grown fruits in every sip.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$3.99</p>
+        </div>
+      </div>
+      <div class="product-card" style="background-color: #FF6FFF;">
+        <img src="Handcrafted Pastries.jpg" alt="Local Food Product 10">
+        <div class="product-description">
+          <h3>Handcrafted Pastries</h3>
+          <p>Delicate pastries made with love and care by our skilled bakers.</p>
+          <p class="product-price" style="color:gold; font-size:35px;">$8.99</p>
+        </div>
+      </div>
+      
+    </section>
+    
+    <section id="product-details">
+      <h2>Product Details</h2>
+      <p>Our Local Delight is a versatile product that can be used in a variety of dishes. It is made from organic vegetables, locally-sourced meats, and a secret blend of spices that gives it a unique flavor profile.</p>
+      <p>Each package of Local Delight is priced at $9.99 and is available year-round. Whether you're cooking for a family dinner or hosting a party, Local Delight is the perfect choice to add a burst of flavor to your dishes.</p>
+      <p>Our product is produced in small batches to ensure the highest quality and freshness. We take pride in supporting local farmers and producers, and we believe that our commitment to using locally-sourced ingredients sets us apart.</p>
+      <p>Local Delight is not only delicious but also nutritious. It is low in calories and fat, making it a healthy choice for any meal. Plus, it's packed with essential nutrients like vitamins and minerals to fuel your body and keep you feeling great.</p>
+      <p>Whether you're a seasoned chef or a novice cook, Local Delight is sure to become a staple in your kitchen. Try it today and taste the difference!</p>
+    </section>
+  </main>
+
+ 
+   
+         <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <center><div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left" style="color:black; font-size:50px;">
+                        Send Message Us
+                      </h5>
+                    </div>
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded" >Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left" style="color:black;">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                       You can contact me
+                      </p>
+                      
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://web.facebook.com/profile.php?id=100069847524145"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href="https://www.instagram.com"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://twitter.com/"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
